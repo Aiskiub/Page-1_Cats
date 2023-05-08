@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&family=Varela+Round&display=swap');
+
+:root {
+    --BrightOrange: hsl(31, 77%, 52%);
+    --DarkCyan: hsl(184, 100%, 22%);
+    --VeryDarkCyan: hsl(179, 100%, 13%);
+    --TransparentWhite: hsla(0, 0%, 100%, 0.75);
+    --VeryLightGray: hsl(0, 0%, 95%);
+    --FuentePerso: 'Varela Round', sans-serif;
+    --ButtonFont: 'Sigmar', cursive;
+}
+
+html {
+    font-size: 1rem;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: #ffe898;
+    color: #4e182d;
+    font-family: var(--FuentePerso);
+}
+
+.negro,
+.marron,
+.amarrillo {
+    width: 20em;
+    height: 30em;
+}
+
+
+h1 {
+    color: darkorange;
+    font-family: var(--ButtonFont);
+    font-weight: 100;
+    
+
+}
+.mt-5{
+    font-size: 100px;
+}
+
+.packageN, .packageA, .packageM{
+    margin: 7em 2em 0;
+    text-align: center;
+}
+
+
+button {
+    --fontSize: 1rem;
+    --button: 250, 80%;
+    --buttonColor: hsl(var(--button), 70%);
+    --sideColor: hsl(var(--button), 40%);
+    --text: hsl(var(--button), 30%);
+    --bgColor: #e8e8e8;
+    position: relative;
+    font-size: 0;
+    font-family: var(--ButtonFont);
+    transition: all 300ms cubic-bezier(0.47, 1.64, 0.41, 0.8);
+    border-radius: 999px;
+    padding: calc(var(--fontSize) / 2);
+    margin-left: calc(var(--fontSize) * 5);
+    height: calc(var(--fontSize) * 2);
+    min-width: calc(var(--fontSize) * 2);
+    line-height: calc(var(--fontSize) * 0.75);
+    border: none;
+    outline: none;
+    background-color: var(--buttonColor);
+    transform: rotate(-25deg);
+    color: var(--text);
+    white-space: nowrap;
+    cursor: cell;
+    -webkit-tap-highlight-color: transparent;
+    box-shadow: calc(var(--fontSize) / -25) calc(var(--fontSize) / 25) calc(var(--fontSize) / 25) #ffffffbb inset, calc(var(--fontSize) / -25) calc(var(--fontSize) / -50) calc(var(--fontSize) / 25) #ffffff88 inset,
+        0 0 calc(var(--fontSize) / 5) #0f004a77 inset, 0 0 0 calc(var(--fontSize) / 3.6) var(--buttonColor) inset,
+        0 0 calc(var(--fontSize) / 6.25) calc(var(--fontSize) / 3.125) #0f004a44 inset, calc(var(--fontSize) / -25) calc(var(--fontSize) / 12.5) 0 var(--sideColor),
+        calc(var(--fontSize) / -8.33) calc(var(--fontSize) / 12.5) calc(var(--fontSize) / 6.25) #0f004a44, calc(var(--fontSize) / -16.666) calc(var(--fontSize) / 12.5) calc(var(--fontSize) / 25) #0f004a66;
+}
+
+button:hover {
+    transform: rotate(0);
+    overflow: visible;
+    font-size: var(--fontSize);
+}
+
+button::before,
+button::after {
+    content: ": ";
+    font-family: serif;
+    font-weight: bold;
+    text-shadow: calc(var(--fontSize) / 25) 0 0 var(--sideColor), 0 0 calc(var(--fontSize) / 12.5) #0f004a55,
+        calc(var(--fontSize) / 50) 0 0 var(--sideColor), calc(var(--fontSize) / 50) calc(var(--fontSize) / -50) 0 var(--sideColor);
+    color: var(--bgColor);
+    font-size: var(--fontSize);
+}
+.book {
+    position: relative;
+    border-radius: 10px;
+    width: 17em;
+    margin-right: auto;
+    height: 27em;    
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    -webkit-transform: preserve-3d;
+    -ms-transform: preserve-3d;
+    transform: preserve-3d;
+    -webkit-perspective: 2000px;
+    perspective: 2000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #000;
+  }
+  .N{
+    background-color: aliceblue;
+  }
+  .A{
+    background-color: blanchedalmond;
+  }
+  .M{
+    background-color: rgb(167, 151, 145);
+  }
+
+  .cover {
+    top: 0;
+    position: absolute;
+    width: 17em;
+    height: 27em;   
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform-origin: 0;
+    -ms-transform-origin: 0;
+    transform-origin: 0;
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .negros{
+    background-image: url("gato_gris.png");
+    background-size: cover;
+
+  }
+  .amarrillos{
+    background-image: url("gato_azul.png");
+    background-size: cover;
+  }
+  .marrones{
+    background-image: url("marron.png");
+    background-size: cover;
+  }
+  .book:hover .cover {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: rotatey(-80deg);
+    -ms-transform: rotatey(-80deg);
+    transform: rotatey(-80deg);
+  }
+  
+  p {
+    font-size: 17px;
+  }
+
+  @media (max-width: 440px) {
+    main {
+        margin-top: 18.5em;
+        flex-direction: column;
+    }
+    .book{
+        margin-top: 3em;
+    }
+    .packageN,
+    .packageA,
+    .packageM {
+      margin: 7em 3em 0;
+    }
+    .mt-5{
+        margin-left: .4em;
+        font-size: 50px;
+    }
+  }
