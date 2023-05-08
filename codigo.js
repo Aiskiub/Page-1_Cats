@@ -3,3 +3,8 @@ window.addEventListener("load", function() {
         document.getElementById("loader").classList.toggle("loader2");
     }, 1500);
 });
+
+function cambiarModo() { 
+    var cuerpoweb = document.body; 
+    cuerpoweb.classList.toggle("oscuro"); 
+    } 

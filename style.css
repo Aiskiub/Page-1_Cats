@@ -26,6 +26,7 @@ body {
   background-color: #ffe898;
   color: #4e182d;
   font-family: var(--FuentePerso);
+  transition: .5s;
 }
 .r2 {
   overflow: hidden;
@@ -594,7 +595,14 @@ button::after {
   -ms-transform: rotatey(-80deg);
   transform: rotatey(-80deg);
 }
-
+a{
+  color: black;
+  text-decoration: none;
+}
+a:hover{
+  transition: .5s;
+  color: #272727;
+}
 p {
   font-size: 17px;
 }
